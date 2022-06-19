@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor número arreglos JS</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        var nums,i=0,max=0,pos;
+        
+        nums=parseInt(prompt("Digite la cantidad números del arreglo: "));
+        
+        var a=[nums];
+         
+        for(i=0;i<nums;i++){
+
+            a[i]=parseInt(prompt("\n Digite un número: "));
+
+            if(a[i]>max){
+                max=parseInt(a[i]); 
+                pos=parseInt(i);
+            }
+
+        }
+
+        alert("El número mayor es: "+max+"\n y su posición en el arreglo es: "+pos);
+        
+    
+    </script>
+    
+</body>
+</html>

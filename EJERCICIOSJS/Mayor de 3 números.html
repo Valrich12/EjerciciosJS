@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor de 3 números JS</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        var a,b,c; 
+    
+        a=prompt("\nDigita el primer número:"); 
+        b=prompt("\nDigita el segundo número:"); 
+        c=prompt("\nDigita el tercer número:"); 
+    
+        
+        
+        if(a>b){
+            if(a>c){
+                alert("El mayor número es: "+a);
+            }else{
+                alert("El mayor número es: "+c);
+            }
+        }
+        else if(b>a){
+            if(b>c){
+                alert("El mayor número es: "+b);
+            }
+            else{
+                alert("El mayor número es:"+a);
+            }
+        }
+
+        else if(c>a){
+            if(c>b) alert("El mayor número es :"+c);
+            else alert("El mayor número es:  "+b);
+        }
+        if((a==b==c))alert("Los números son iguales");
+
+        
+         /*
+        TDWJS.netlify.app
+        */
+    
+    </script>
+    
+</body>
+</html>
+
+

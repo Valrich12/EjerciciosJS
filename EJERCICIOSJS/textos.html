@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        var nums;
+        
+        nums=parseInt(prompt("Digite la cantidad textos a ingresar del arreglo: "));
+         
+        var textos= [];
+        for(i=0;i<nums;i++){
+            textos[i]=prompt("\n Digite un el texto: ");
+        }
+        for (let i = 0; i < textos.length; i++) {
+            document.write("Texto " +i+": "+textos[i]+"<br>");
+            document.write("Longitud: "+textos[i].length+"<br>");
+            document.write("Mayusculas: "+(textos[i].toUpperCase())+"<br>");
+            document.write("Mainusculas: "+(textos[i].toLowerCase())+"<br>");
+        }
+        
+    
+    </script>
+    
+</body>
+</html>

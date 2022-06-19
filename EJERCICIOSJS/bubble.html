@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function bubble(arr) {
+      var len = arr.length;
+
+      for (var i = 0; i < len ; i++) {
+           for(var j = 0 ; j < len - i - 1; j++){ 
+              if (arr[j] > arr[j + 1]) {
+
+                  var temp = arr[j];
+                  arr[j] = arr[j+1];
+                  arr[j + 1] = temp;
+              }
+          }
+      }
+      return arr;
+      }
+function rellenar(matriz)
+      {
+          var largo, valor, ind;
+          largo = matriz.length;
+          for(ind = 0; ind < largo; ind++)
+              {
+                  valor = Math.random()*20;
+                  matriz[ind] = Math.round(valor);
+              }
+      }
+var lista=new Array(10);
+rellenar(lista);
+document.write("Arreglo original:"+lista+"<br>");
+document.write("Arreglo ordenado: "+bubble(lista));
+      </script>
+    </script>
+  </body>
+</html>
